@@ -8,7 +8,15 @@
 ```javascript
 import {makeAction} from 'ts-action-creator'
 
-const myTypedAction = makeAction<{value : string}>('MY_TYPED_ACTION_NAME');
+const myTypedAction = makeAction<{value : string}>('MY_TYPED_ACTION_NAME'); // creating action
 
-myTypedAction(); // {type : 'MY_TYPED_ACTION_NAME' , payload : {value : 'value'}}
+dispatch(myTypedAction()); // will be dispatched as {type : 'MY_TYPED_ACTION_NAME' , payload : {value : 'value'}}
+
+
+function reducer(state = {} , action : Action) {
+    if(myTypedAction.match(action)) { // Usage in reducer
+        return state;
+    }
+}
+
 ```
