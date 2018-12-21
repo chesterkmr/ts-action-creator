@@ -3,6 +3,10 @@
 
 `ts-action-creator` simple library which will let you create type actions.
 
+### Install
+
+`npm i --save ts-action-creator`
+
 ### Usage Example
 
 ```javascript
