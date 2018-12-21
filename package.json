@@ -1,18 +1,20 @@
 {
   "name": "ts-action-creator",
-  "version": "1.0.0",
+  "version": "0.01",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "action-creator",
-    "ts-action-creator"
+    "ts-action-creator",
+    "redux-action-creator"
   ],
   "author": "Ilya Rudnev",
   "license": "ISC",
   "dependencies": {
     "redux": "^4.0.1"
-  }
+  },
+  "repository": {
+    "type" : "git",
+    "url": "https://github.com/chesterkmr/ts-action-creator" 
+  } 
 }
