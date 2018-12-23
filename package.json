@@ -1,6 +1,10 @@
 {
   "name": "ts-action-creator",
+<<<<<<< HEAD
   "version": "0.1.4",
+=======
+  "version": "0.1.3",
+>>>>>>> bbbf8428977e3b446aaaef246315d51a1cd3e5d1
   "description": "",
   "main": "index.js",
   "keywords": [
