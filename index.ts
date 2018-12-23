@@ -9,5 +9,7 @@ export const makeAction = function<ActionData , ActionType>(type : ActionType) {
         return action.type === type;
     }
 
+    creator.type = type;
+
     return creator;
 }

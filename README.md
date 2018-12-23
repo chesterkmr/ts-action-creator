@@ -26,3 +26,9 @@ function reducer(state = {} , action : Action) {
 }
 
 ```
+
+### Action Properties
+
+```javascript
+
+createdAction.type // Contains action type
