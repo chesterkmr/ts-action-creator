@@ -1,7 +1,7 @@
 # ts-action-creator
 
 
-`ts-action-creator` simple library which will let you create typed actions for redux.
+`ts-action-creator` simple library which will let you create typed actions for reducers.
 
 ### Install
 
