@@ -1,15 +1,15 @@
-import { Action } from 'redux';
+export const makeAction = function <ActionData>(type: string) {
+  function creator(payload?: ActionData) {
+    return { type, ...(payload ? { payload } : {}) };
+  }
 
-export const makeAction = function<ActionData , ActionType>(type : ActionType) {
-    function creator(payload? : ActionData) {
-        return {type , ...(payload ? {payload} : {})};
-    }
+  creator.match = function (action: {
+    type: string;
+  }): action is { type: string } & { payload: ActionData } {
+    return action.type === type;
+  };
 
-    creator.match = function(action : Action) : action is Action & {payload : ActionData} {
-        return action.type === type;
-    }
+  creator.type = type;
 
-    creator.type = type;
-
-    return creator;
-}
+  return creator;
+};
